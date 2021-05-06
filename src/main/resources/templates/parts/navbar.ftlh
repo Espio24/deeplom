@@ -13,7 +13,7 @@
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/gamelibrary">Игротеки</a>
+                <a class="nav-link" href="/gamerooms">Игротеки</a>
             </li>
 
             <li class="nav-item">

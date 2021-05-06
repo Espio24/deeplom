@@ -15,13 +15,13 @@ public class MvcConfig implements WebMvcConfigurer {
         registry.addViewController("/login").setViewName("login");
     }
 
-   /* @Override
+   @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry){
-        registry.addResourceHandler("/imglib/**")
-                .addResourceLocations("file://" + uploadPath +"/" + "libraryimg" + "/");
+        registry.addResourceHandler("/roomimg/**")
+                .addResourceLocations("file://" + uploadPath +"/" + "roomimg" + "/");
         registry.addResourceHandler("/imggame/**")
                 .addResourceLocations("file://" + uploadPath +"/" + "gamesimg" + "/");
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/");
-    }*/
+    }
 }

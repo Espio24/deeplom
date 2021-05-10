@@ -13,6 +13,7 @@ public class GamesRoom {
     private String adressGameRoom;
     private String discriptionGameRoom;
     private String filenameGameRoom;
+    private int countPeople;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -21,14 +22,25 @@ public class GamesRoom {
     public GamesRoom() {
     }
 
-    public GamesRoom(String nameGameRoom, String dateGameRoom, String cityGameRoom, String adressGameRoom, String discriptionGameRoom,  User user) {
+    public GamesRoom(String nameGameRoom, String dateGameRoom, String cityGameRoom, String adressGameRoom, String discriptionGameRoom,  User user, int countPeople) {
         this.nameGameRoom = nameGameRoom;
         this.dateGameRoom = dateGameRoom;
         this.cityGameRoom = cityGameRoom;
         this.adressGameRoom = adressGameRoom;
         this.discriptionGameRoom = discriptionGameRoom;
         this.user = user;
+        this.countPeople = countPeople;
     }
+
+    public int getCountPeople() {
+        return countPeople;
+    }
+
+    public void setCountPeople(int countPeople) {
+        this.countPeople = countPeople;
+    }
+
+    public String getUserName(){ return user != null ? user.getUsername():"<none>";}
 
     public String getFilenameGameRoom() {
         return filenameGameRoom;

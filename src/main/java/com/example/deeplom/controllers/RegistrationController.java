@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
@@ -27,9 +28,14 @@ public class RegistrationController {
     }
 
     @PostMapping("/registration")
-    public String addUser(User user, Map<String, Object> model) {
+    public String addUser(
+            User user,
+            @RequestParam String firstName,
+            @RequestParam String secondName,
+            @RequestParam String lastName,
+            Map<String, Object> model) {
 
-        if (!userService.addUser(user)) {
+        if (!userService.addUser(user, firstName, secondName, lastName)) {
             model.put("message", "User exists!");
             return "registration";
         }

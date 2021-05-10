@@ -5,13 +5,17 @@ import com.example.deeplom.domain.Role;
 import com.example.deeplom.domain.User;
 import com.example.deeplom.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -26,12 +30,16 @@ public class UserService implements UserDetailsService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Value("${upload.path}" + "/" + "profileimg")
+    private String uploadPath;
+
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepo.findByUsername(username);
     }
 
-    public boolean addUser(User user){
+    public boolean addUser(User user, String firstName, String secondName, String lastName){
 
             User userFromDb = userRepo.findByUsername(user.getUsername());
 
@@ -44,6 +52,9 @@ public class UserService implements UserDetailsService {
             user.setRoles(Collections.singleton(Role.USER));
             user.setActivationCode(UUID.randomUUID().toString());
             user.setPassword(passwordEncoder.encode(user.getPassword()));
+            user.setFirstName(firstName);
+            user.setSecondName(secondName);
+            user.setLastName(lastName);
 
             userRepo.save(user);
 
@@ -102,7 +113,15 @@ public class UserService implements UserDetailsService {
         userRepo.save(user);
     }
 
-    public void updateProfile(User user, String password, String email) {
+    public void updateProfile(
+            User user,
+            String password,
+            String email,
+            String lastname,
+            String firstname,
+            String secondname,
+            MultipartFile filenameUser
+    )throws IOException {
         String userEmail = user.getEmail();
 
         boolean isEmailChanged = (email != null && !email.equals(userEmail)) || (userEmail != null && !userEmail.equals(email));
@@ -118,6 +137,34 @@ public class UserService implements UserDetailsService {
         if (!StringUtils.isEmpty(password)){
             user.setPassword(passwordEncoder.encode(password));
         }
+
+        if (!StringUtils.isEmpty(lastname)){
+            user.setLastName(lastname);
+        }
+
+        if (!StringUtils.isEmpty(firstname)){
+            user.setFirstName(firstname);
+        }
+
+        if (!StringUtils.isEmpty(secondname)){
+            user.setSecondName(secondname);
+        }
+
+        if (filenameUser != null && !filenameUser.getOriginalFilename().isEmpty()) {
+            File uploadDir = new File(uploadPath);
+
+            if (!uploadDir.exists()) {
+                uploadDir.mkdir();
+            }
+
+            String uuidFile = UUID.randomUUID().toString();
+            String resultFilename = uuidFile + "." + filenameUser.getOriginalFilename();
+
+            filenameUser.transferTo(new File(uploadPath + "/" + resultFilename));
+
+            user.setFilenameUser(resultFilename);
+        }
+
 
         userRepo.save(user);
 

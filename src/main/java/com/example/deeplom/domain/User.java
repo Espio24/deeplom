@@ -18,6 +18,10 @@ public class User implements UserDetails {
     private String username;
     private String password;
     private boolean active;
+    private String FirstName;
+    private String SecondName;
+    private String LastName;
+    private String filenameUser;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
@@ -43,7 +47,37 @@ public class User implements UserDetails {
         return Objects.hash(id);
     }
 
+    public String getFilenameUser() {
+        return filenameUser;
+    }
 
+    public void setFilenameUser(String filenameUser) {
+        this.filenameUser = filenameUser;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    public String getSecondName() {
+        return SecondName;
+    }
+
+    public void setSecondName(String secondName) {
+        SecondName = secondName;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
 
     public boolean isAdmin(){
         return roles.contains(Role.ADMIN);

@@ -3,37 +3,21 @@
 
 
 <@c.page>
-
-
+    <#include "parts/gameEdit.ftlh">
     <h1>Список игр</h1>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-       aria-controls="collapseExample">
-        Редактор игр
-    </a>
-    <div class="collapse" id="collapseExample">
-        <div class="form-group mt-3">
-            <form method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="nameTableGames" placeholder="Название игры">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="discriptionTableGames" placeholder="Описание игры">
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Сохранить игру</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-    <div class="card-columns mt-2">
+    <div class="card-columns mt-3">
         <#list tablegames>
             <#items as games>
                 <div class="card mx-auto">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="/games/${games.idTableGames}">${games.nameTableGames}</a></h5>
+                        <h5 class="card-title"><a href="/tablegames/${games.idTableGames}">${games.nameTableGames}</a></h5>
                     </div>
+                    <div>
+                        <#if games.filenameTableGames??>
+                            <p><a href="/tablegames/${games.idTableGames}"> <img src="/gamesimg/${games.filenameTableGames}" height=300px class="card-img-top"> </a> </p>
+                        </#if>
+                    </div>
+
                 </div>
             </#items>
 

@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11b7abb6-6a54-45fc-8705-8cc9c1702b50" name="Default Changelist" comment="Добавил игротеку">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GameRoomContoller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/GamesRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/GameRoomRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/gamerooms.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/gameRoomEdit.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/176f776f-9454-4750-a325-5c69ea996913.monopoly-russia.png" afterDir="false" />
+    <list default="true" id="11b7abb6-6a54-45fc-8705-8cc9c1702b50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/GameRoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/gameRoomPage.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/;jgf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/formGameRoomEdit.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/gameEdit.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/gameRoomAdd.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/userEdit.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/7348498d-9fe7-45db-b029-79205d1d695b.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/7c677fcd-9908-4171-8a21-9bad550e27db.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/profileimg/09740fab-afd0-44ce-bcb2-5ed9c37d348f.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/profileimg/62de8b79-fffc-46ac-9b38-9195421bd4e4.scale_1200.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/094ee554-7e6e-43c4-a0be-aa797a8c571f.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/0f11301f-8628-489f-ab26-0b46047440d0.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/1bc490b6-69ef-4ce9-bb01-feabcfad65f5.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/1ce24501-caec-4662-8042-8082571755be.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/23e47320-1756-49fc-838d-a7071cb1f0d8.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/257f5d68-a34b-4c17-b864-5007eaf5f024.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/27012827-077d-4707-898a-999c639da892.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/2f4df2f1-a43c-4373-86a3-3dcd6acfa4ec.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/2fa31c82-59ea-42ff-85f2-c478e49546a6.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/2fc05003-4eed-4f88-b49c-b511363fe5e2.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/3bda5bb8-ff02-4462-87ba-55732ab9dffb.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/43140b59-1a3a-4928-9d4e-5d3b0c467fe5.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/434bd7ed-39b2-4d31-80a8-0317a0ff2545.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/46840773-d2fc-473d-8817-2350b56748fa.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/58e49b63-b6bd-4f4b-9b0d-445398891080.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/69d5a8e0-e92e-4533-8d1f-882f4b1c2d4a.s1200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/6e7cfac6-67ff-4852-a8a0-4ca409dbba5c.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8064a103-5c75-4dda-ac3a-867885a8369d.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/85c1c80b-d531-4e61-a50e-a734841a6614.s1200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/893a6573-8e75-41fa-9e5c-39f481638180.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8a2e01d6-d441-4b06-a116-5e132d48eddd.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8c3f43a8-6415-4d01-9883-373a7c0de42d.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/a05df37f-2080-43b0-88c0-36831c6eac9d.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/a26de6b3-0671-4ad8-9d65-553c8bb7d967.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/aa188b1d-d884-48bb-af4f-5ef664806218.monopoly-russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/adaf4491-c3be-49c8-ae55-a1d48c01c1ef.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/adbfd0bd-459d-40df-832a-660dd6d23e37.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/b17fb33d-e4e4-4f8a-a329-f00cdd1d8c76.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/b27a2f1a-7160-416c-8d9e-b947f79f8b6c.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c4d5a6dd-af99-4ece-9bc1-b36054c8e3eb.scale_1200.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c8c60b26-596d-4916-bfea-7e54959b96f9.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/e42f1c54-c981-433a-a8da-0428846a3ceb.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/e84e1b46-0e7c-4d1c-b6e0-1e864369e481.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/e97db00f-ebf3-452a-b798-3d419ecd46f3.scale_1200.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/ee478eec-a900-489a-997b-91c0b46c575a.s1200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/efab18dd-5555-4b3e-b3a9-fe76c1c2c6e9.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/f172d740-6dd4-49d8-a8b0-e52e6d6dfa9a.scale_1200.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/f1f0de36-b6df-4f10-aa4b-288aa4b023f1.s1200.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/deeplom.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GameRoomContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GameRoomContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GamesContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GamesContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/GamesRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/GamesRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TableGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TableGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gamerooms.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gameroomsList.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/games.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gamesPage.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gamesList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gamesList.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/gameRoomEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/gameRoomEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/games.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/gamesList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/gamesList.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userList.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,17 +153,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TableGames" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java programm\deeplom\src\main\resources\templates\parts" />
       <recent name="D:\java programm\deeplom\src\main\resources\templates" />
+      <recent name="D:\java programm\deeplom\src\main\java\com\example\deeplom" />
+      <recent name="D:\java programm\deeplom\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.deeplom.controllers" />
@@ -108,11 +175,9 @@
       <recent name="com.example.deeplom.repos" />
       <recent name="com.example.deeplom.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java programm\deeplom\src\main\resources\templates" />
-      <recent name="D:\java programm\deeplom\src\main\java\com\example\deeplom" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java programm\deeplom\src\main\resources\templates\parts" />
-      <recent name="D:\java programm\deeplom\src\main\resources" />
+      <recent name="D:\java programm\deeplom\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,8 +212,20 @@
       <updated>1616506171594</updated>
       <workItem from="1616506177218" duration="9048000" />
       <workItem from="1616667075400" duration="5842000" />
-      <workItem from="1620304464580" duration="7167000" />
+      <workItem from="1620304464580" duration="7201000" />
+      <workItem from="1620321516242" duration="6306000" />
+      <workItem from="1620579436741" duration="10352000" />
+      <workItem from="1620589889281" duration="4971000" />
+      <workItem from="1620650510849" duration="16861000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавил игротеку">
+      <created>1620311719808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620311719808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,78 +241,98 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1616508848701" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1620305547263">
+    <state x="717" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620654835174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620305547263" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1620305842890">
+    <state x="717" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620654835174" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1620667516049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620305842890" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616506216327">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620667516049" />
+    <state x="414" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1620654356993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1616506216327" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1620311433474">
+    <state x="414" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620654356993" />
+    <state x="707" y="367" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1620589905869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433474" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1620311433474">
+    <state x="707" y="367" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620589905869" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1620311718692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433474" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1620311433474">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311718692" />
+    <state width="402" height="466" key="DebuggerActiveHint" timestamp="1620656732742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433474" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1620311433474">
+    <state width="402" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620656732742" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1620650747331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433474" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1620311433475">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620650747331" />
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1620664255625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255625" />
+    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="221" key="GridCell.Tab.1.bottom" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="221" key="GridCell.Tab.1.center" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.1.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="221" key="GridCell.Tab.1.left" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1620311433475">
+    <state width="1877" height="221" key="GridCell.Tab.1.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="221" key="GridCell.Tab.1.right" timestamp="1620664255626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311433475" />
+    <state width="1877" height="221" key="GridCell.Tab.1.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620664255626" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1620661138866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620661138866" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1620661138866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620661138866" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1620661138866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620661138866" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1620661138866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620661138866" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1616508750075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1616508750075" />
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620311695829">
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620668839002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620311695829" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616508926204">
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620668839002" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1620653028928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1616508926204" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620653028928" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1620667750165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620667750165" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deeplom$Application.ic" NAME="Application Coverage Results" MODIFIED="1620306713603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

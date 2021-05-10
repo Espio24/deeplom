@@ -12,6 +12,16 @@ public class TableGames {
     private Long idTableGames;
     private String nameTableGames;
     private String discriptionTableGames;
+    private String filenameTableGames;
+
+
+    public String getFilenameTableGames() {
+        return filenameTableGames;
+    }
+
+    public void setFilenameTableGames(String filenameTableGames) {
+        this.filenameTableGames = filenameTableGames;
+    }
 
     public Long getIdTableGames() {
         return idTableGames;

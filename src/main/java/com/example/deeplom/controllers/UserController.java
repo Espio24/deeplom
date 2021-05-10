@@ -2,6 +2,7 @@ package com.example.deeplom.controllers;
 
 
 import com.example.deeplom.domain.Role;
+import com.example.deeplom.domain.TableGames;
 import com.example.deeplom.domain.User;
 import com.example.deeplom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.Map;
 
 @Controller
@@ -49,24 +52,32 @@ public class UserController {
         return "redirect:/user";
     }
 
-    @GetMapping("profile")
-    public String getProfile(Model model, @AuthenticationPrincipal User user){
-        model.addAttribute("username", user.getUsername());
-        model.addAttribute("email", user.getEmail());
 
+    @GetMapping("/profile/{user}")
+    public String userProfile(
+            @PathVariable User user,
+            Model model
+    ){
+        model.addAttribute("users", user);
         return "profile";
     }
 
-    @PostMapping("profile")
-    public String updateProfile(
-            @AuthenticationPrincipal User user,
+    @PostMapping("/profile/{user}")
+    public String editProfile(
+            @PathVariable User user,
+            @RequestParam String lastName,
+            @RequestParam String firstName,
+            @RequestParam String secondName,
+            @RequestParam String email,
             @RequestParam String password,
-            @RequestParam String email
-            ){
+            @RequestParam MultipartFile filenameUser,
+            Model model
+    )throws IOException{
 
-        userService.updateProfile(user, password, email);
+       userService.updateProfile(user, password, email, lastName, firstName, secondName, filenameUser);
 
-        return "redirect:/user/profile";
+        model.addAttribute("User", user);
+       return "redirect:/user/profile/{user}";
     }
 
 }

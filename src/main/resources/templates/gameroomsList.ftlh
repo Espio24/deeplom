@@ -3,18 +3,19 @@
 
 
 <@c.page>
-    <#include "parts/gameRoomEdit.ftlh">
-    <div class="card-columns mt-2">
+    <#include "parts/gameRoomAdd.ftlh">
+    <div class="card-columns mt-3">
         <#list gamesroom>
             <#items as room>
-                <div class="card">
+                <div class="card mx-auto">
                     <div class="card-header">
                        <h5 class="card-tittle">${room.nameGameRoom}</h5>
+                        <a href="/user/profile/${room.user.id}"> ${room.userName}</a>
                     </div>
 
                     <div>
                         <#if room.filenameGameRoom??>
-                            <img src="/roomimg/${room.filenameGameRoom}" height=300px class="card-img-top">
+                            <p><a href="/gamerooms/${room.idGameRoom}"> <img src="/roomimg/${room.filenameGameRoom}" height=300px class="card-img-top"> </a> </p>
                         </#if>
                     </div>
 
@@ -22,13 +23,14 @@
                         <li class="list-group-item">Когда: ${room.dateGameRoom}</li>
                         <li class="list-group-item">В каком городе: ${room.cityGameRoom}</li>
                         <li class="list-group-item">Где: ${room.adressGameRoom}</li>
+                        <li class="list-group-item">Ожидается игроков: ${room.countPeople}</li>
                     </ul>
 
                     <div class="card-footer">
 
                         <#if room.user.id == currentUserId>
                             <a class="btn btn-primary"
-                               href="/user-gamerooms/${room.user.id}?toyLibrary=${room.idGameRoom}">
+                               href="gamerooms/${room.idGameRoom}/edit">
                                 Редактировать </a>
                         </#if>
 
@@ -46,10 +48,4 @@
             <p>Игротек нет, станьте её создателем.</p>
         </#list>
     </div>
-
-
-
-
-
-
 </@c.page>

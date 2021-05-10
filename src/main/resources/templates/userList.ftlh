@@ -1,9 +1,9 @@
 <#import "parts/common.ftlh" as c>
 
 <@c.page>
-List of users
+Список пользователей
 
-    <table>
+    <table class="table">
         <thead>
         <tr>
             <th>Name</th>

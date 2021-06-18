@@ -18,7 +18,8 @@
                         <input type="text" class="form-control" name="nameGameRoom" placeholder="Название игротеки">
                     </div>
                     <div class="form-group">
-                        <input type="datetime-local" class="form-control" name="dateGameRoom" placeholder="Дата игротеки">
+                        <input type="datetime-local" class="form-control" name="dateGameRoom"
+                               placeholder="Дата игротеки">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" name="cityGameRoom" placeholder="Город">
@@ -27,26 +28,46 @@
                         <input type="text" class="form-control" name="adressGameRoom" placeholder="Адрес">
                     </div>
                     <div class="form-group">
-                        <textarea rows="3" type="text" class="form-control" name="discriptionGameRoom" placeholder="Описание"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="countPeople" placeholder="Ожидаемое количество людей">
-                    </div>
-                    <input type="hidden" class="form-control" name="_csrf" value="${_csrf.token}"/>
-                    <div class="form-group">
-                        <div class="custom-file">
-                            <input type="file" name="filenameGameRoom" id="customFile">
-                            <label class="custom-file-label" for="customFile">Выберите файл</label>
+
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Во что играем?</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2" name="gamesSet">
+                                <#list tablegames>
+                                <#items as game>
+                                <option value="${game.idTableGames}">  ${game.nameTableGames}</option>
+                                </#items>
+                                </#list>
                         </div>
+                        </select>
                     </div>
-                    </form-->
+
+
+
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                <button type="submit" class="btn btn-primary">Сохранить игротеку</button>
+            <div class="form-group">
+                        <textarea rows="3" type="text" class="form-control" name="discriptionGameRoom"
+                                  placeholder="Описание"></textarea>
             </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="countPeople"
+                       placeholder="Ожидаемое количество людей">
+            </div>
+            <input type="hidden" class="form-control" name="_csrf" value="${_csrf.token}"/>
+            <div class="form-group">
+                <div class="custom-file">
+                    <input type="file" name="filenameGameRoom" id="customFile">
+                    <label class="custom-file-label" for="customFile">Выберите файл</label>
+                </div>
+            </div>
+            </form-->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-primary">Сохранить игротеку</button>
         </div>
     </div>
+</div>
 </div>
 
 

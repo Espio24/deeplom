@@ -18,6 +18,34 @@
                         </#if>
                     </div>
 
+                    <div class="card-footer">
+                        <#if !isAdmin>
+                            <a class="btn btn-primary"
+                               href="">
+                                Подписаться </a>
+                            <a class="btn btn-primary"
+                               href="">
+                                Добавить в аренду </a>
+                        </#if>
+
+
+                        <#if isAdmin>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Действия
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item"  href="tablegames/${games.idTableGames}/edit">Редактировать</a>
+                                    <a class="dropdown-item"  href="/tablegames/delete/${games.idTableGames}">Удалить</a>
+                                    <a class="dropdown-item" href="#">Копии</a>
+                                    <a class="dropdown-item" href="#">Добавить копию</a>
+                                </div>
+                            </div>
+
+                        </#if>
+
+                    </div>
+
                 </div>
             </#items>
 

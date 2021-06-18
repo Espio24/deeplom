@@ -2,15 +2,15 @@
     <div class="container">
         <div class="row">
             <#if !isRegisterForm>
-                <div class="border border-dark col-md-6">
+                <div class="col-md-6">
                     <div>
                         Тут у нас приветственное слово
                     </div>
                 </div>
             </#if>
-            <div class="border border-dark col">
+            <div class="col">
                 <div class="row">
-                    <div class="border border-dark col">
+                    <div class="col">
                     <form action="${path}" method="post">
                         <div class="form-group ml-2">
                             <label for="exampleInputEmail1">Логин</label>
@@ -26,15 +26,22 @@
                                 <input type="email" name="email" class="form-control" placeholder="some@some.com" />
                             </div>
 
-                                <label class="ml-2" for="exampleInputEmail1">Фамилия</label>
-                                <input type="text" name="lastName" class="form-control ml-2" placeholder="Фамилия" />
-                                <label class="ml-2" for="exampleInputEmail1">Имя</label>
-                                <input type="text" name="firstName" class="form-control ml-2" placeholder="Имя" />
-                                <label class="ml-2" for="exampleInputEmail1">Отчество</label>
-                                <input type="text" name="secondName" class="form-control ml-2" placeholder="Отчество" />
+                            <div class="form-row">
+                                <div class="col">
+                                 <input type="text" name="lastName" class="form-control ml-2" placeholder="Фамилия" />
+                                </div>
+                                <div class="col">
+                                   <input type="text" name="firstName" class="form-control ml-2" placeholder="Имя" />
+                                </div>
+                                 <div class="col">
+                                   <input type="text" name="secondName" class="form-control ml-2" placeholder="Отчество" />
+                                </div>
+                              </div>
+
+
 
                         </#if>
-                        <button class="btn btn-primary ml-2" type="submit"><#if isRegisterForm>Create<#else>Sign In</#if></button>
+                        <button class="btn btn-primary ml-2 mt-2" type="submit"><#if isRegisterForm>Создать<#else>Войти</#if></button>
 
 
                         <input type="hidden" name="_csrf" value="${_csrf.token}" />
@@ -55,8 +62,10 @@
 </#macro>
 
 <#macro logout>
+
     <form action="/logout" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}" />
-        <button class="btn btn-primary" type="submit"><#if user??>Sign Out<#else>Log in</#if></button>
+        <button class="btn btn-primary" type="submit">Выйти</button>
     </form>
+
 </#macro>

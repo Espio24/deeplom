@@ -5,4 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface TableGamesRepo extends CrudRepository<TableGames, Long> {
 
+    TableGames findByNameTableGames (String NameTableGames);
 }

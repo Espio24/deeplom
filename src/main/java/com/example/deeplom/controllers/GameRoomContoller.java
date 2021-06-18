@@ -1,8 +1,10 @@
 package com.example.deeplom.controllers;
 
 import com.example.deeplom.domain.GamesRoom;
+import com.example.deeplom.domain.TableGames;
 import com.example.deeplom.domain.User;
 import com.example.deeplom.repos.GameRoomRepo;
+import com.example.deeplom.repos.TableGamesRepo;
 import com.example.deeplom.service.GameRoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,9 +19,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Set;
 
 @Controller
 public class GameRoomContoller {
+
+    @Autowired
+    private TableGamesRepo gamesRepo;
 
     @Autowired
     private GameRoomRepo gameRoomRepo;
@@ -31,10 +38,18 @@ public class GameRoomContoller {
     private String uploadPath;
 
     @GetMapping("/gamerooms")
-    public String main (
+    public String gameRoomList (
+            @RequestParam(required = false, defaultValue = "") String filter,
             Model model
     ){
-        model.addAttribute("gamesroom", gameRoomService.findAll());
+        Iterable<GamesRoom> gamesRooms = gameRoomRepo.findAll();
+        if (filter != null && !filter.isEmpty()) {
+            gamesRooms = gameRoomRepo.findByCityGameRoom(filter);
+        } else {
+            gamesRooms =  gameRoomService.findAll();
+        }
+        model.addAttribute("gamesroom", gamesRooms);
+        model.addAttribute("tablegames", gamesRepo.findAll());
         return "gameroomsList";
     }
 
@@ -48,11 +63,13 @@ public class GameRoomContoller {
             @RequestParam String discriptionGameRoom,
             @RequestParam int countPeople,
             @RequestParam ("filenameGameRoom") MultipartFile filenameGameRoom,
+            @RequestParam List<TableGames> gamesSet,
             Model model
     )throws IOException {
 
-        gameRoomService.addGameRoom(user, nameGameRoom, discriptionGameRoom, countPeople, dateGameRoom, cityGameRoom, adressGameRoom, filenameGameRoom);
+        gameRoomService.addGameRoom(user, nameGameRoom, discriptionGameRoom, countPeople, dateGameRoom, cityGameRoom, adressGameRoom, filenameGameRoom, gamesSet);
 
+        model.addAttribute("tablegames", gamesRepo.findAll());
         model.addAttribute("gamesroom", gameRoomService.findAll());
         return "gameroomsList";
     }
@@ -71,7 +88,10 @@ public class GameRoomContoller {
             @PathVariable GamesRoom gamesRoom,
             Model model
     ){
+        List<TableGames> tableGames = gamesRoom.getTableGames();
+
         model.addAttribute("gamesRoom", gamesRoom);
+        model.addAttribute("tableGames", tableGames);
         return "gameRoomPage";
     }
 

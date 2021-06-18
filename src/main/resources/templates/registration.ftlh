@@ -2,6 +2,7 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    <div class="mb-1">Регистрация</div>
+    <h5 class="mb-1">Регистрация</h5>
+    ${message?ifExists}
     <@l.login "/registration" true />
 </@c.page>

@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalScrollable">
     Редактировать
 </button>
 

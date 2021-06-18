@@ -59,7 +59,7 @@
 <@c.page>
     <div class="container">
         <div class="row">
-            <div class="border border-dark col-md-6">
+            <div class="border col-md-6">
                 <div class="text-center">
                     <#if gamesRoom.filenameGameRoom??>
                         <p><img src="/roomimg/${gamesRoom.filenameGameRoom}" height=300px, width=300px  class="mr-3"></p>
@@ -68,19 +68,19 @@
                 </div>
                 <p> <button type="button" class="btn btn-primary">Подписаться</button></p>
             </div>
-            <div class="border border-dark col">
+            <div class="border col">
                 <h2 class="text-center">${gamesRoom.nameGameRoom}</h2>
                 <div class="row">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Когда: ${gamesRoom.dateGameRoom}</li>
-                        <li class="list-group-item">В каком городе: ${gamesRoom.cityGameRoom}</li>
-                        <li class="list-group-item">Где: ${gamesRoom.adressGameRoom}</li>
+                        <li class="list-group-item list-group-item-dark">Когда: ${gamesRoom.dateGameRoom}</li>
+                        <li class="list-group-item list-group-item-dark">В каком городе: ${gamesRoom.cityGameRoom}</li>
+                        <li class="list-group-item list-group-item-dark">Где: ${gamesRoom.adressGameRoom}</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="border border-dark col">
+            <div class="border  col">
 
                 <h6>Подписчики</h6>
                 <div class="scroll-table">
@@ -102,43 +102,43 @@
                                     <th width=30px scope="row">1</th>
                                     <td>Mark</td>
                                     <th width=30px scope="row">2</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                                 <tr>
                                     <th width=10px scope="row">3</th>
                                     <td>Mark</td>
                                     <th width=10px scope="row">4</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                                 <tr>
                                     <th width=10px scope="row">5</th>
                                     <td>Mark</td>
                                     <th width=10px scope="row">6</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                                 <tr>
                                     <th width=10px scope="row">1</th>
                                     <td>Mark</td>
                                     <th width=10px scope="row">2</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                                 <tr>
                                     <th width=10px scope="row">1</th>
                                     <td>Mark</td>
                                     <th width=10px scope="row">2</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                                 <tr>
                                     <th width=10px scope="row">1</th>
                                     <td>Mark</td>
                                     <th width=10px scope="row">2</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                                 <tr>
                                     <th width=10px scope="row">1</th>
                                     <td>Mark</td>
                                     <th width=10px scope="row">2</th>
-                                    <td>Жопа</td>
+                                    <td>Игрок</td>
                                 </tr>
                             </div>
                             </tbody>
@@ -148,7 +148,36 @@
             </div>
         </div>
         <div class="row">
-            <div class="border border-dark col">
+            <div class="border col">
+                <h8>Во что играем</h8>
+                <div class="scroll-table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th width=5px scope="col">#</th>
+                            <th>Название игры</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="scroll-table-body">
+                        <table>
+                            <tbody>
+                            <div>
+                                <#list tableGames>
+                                    <#items as game>
+                                <tr>
+                                            <th width=30px scope="row">${game?counter}</th>
+                                            <td><a href="/tablegames/${game.idTableGames}">${game.nameTableGames}</td>
+                                </tr>
+                                </#items>
+                                </#list>
+                            </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="border col">
                 <h5>Описание игротеки</h5>
                 <p>${gamesRoom.discriptionGameRoom}</p>
             </div>

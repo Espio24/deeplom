@@ -2,8 +2,10 @@ package com.example.deeplom.service;
 
 
 import com.example.deeplom.domain.GamesRoom;
+import com.example.deeplom.domain.TableGames;
 import com.example.deeplom.domain.User;
 import com.example.deeplom.repos.GameRoomRepo;
+import com.example.deeplom.repos.TableGamesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -12,12 +14,14 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class GameRoomService {
     @Autowired
     GameRoomRepo gameRoomRepo;
+    @Autowired
+    TableGamesRepo tableGamesRepo;
     @Value("${upload.path}" + "/" + "roomimg")
     private String uploadPath;
 
@@ -30,6 +34,7 @@ public class GameRoomService {
         gameRoomRepo.deleteById(gamesRoom.getIdGameRoom());
     }
 
+
     public boolean addGameRoom(
             User user,
             String nameGameRoom,
@@ -38,9 +43,9 @@ public class GameRoomService {
             String dateGameRoom,
             String cityGameRoom,
             String adressGameRoom,
-            MultipartFile filenameGameRoom
-
-    )throws IOException{
+            MultipartFile filenameGameRoom,
+            List<TableGames> gamesSet
+                )throws IOException{
         GamesRoom gamesRoom = new GamesRoom(
                 nameGameRoom,
                 dateGameRoom,
@@ -49,6 +54,11 @@ public class GameRoomService {
                 discriptionGameRoom,
                 user,
                 countPeople);
+
+       Iterator<TableGames> iterator = gamesSet.iterator();
+       while (iterator.hasNext()){
+           gamesRoom.addTableGames(iterator.next());
+       }
 
         if (filenameGameRoom != null && !filenameGameRoom.getOriginalFilename().isEmpty()) {
             File uploadDir = new File(uploadPath);
@@ -67,7 +77,6 @@ public class GameRoomService {
 
         gameRoomRepo.save(gamesRoom);
         return true;
-
     }
 
     public void EditGameRoom(

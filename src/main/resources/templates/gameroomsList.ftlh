@@ -3,8 +3,17 @@
 
 
 <@c.page>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <form method="get" action="/gamerooms" class="form-inline">
+                <input type="text" name="filter" class="form-control" value="${filter?if_exists}" placeholder="Поиск по городу">
+                <button type="submit" class="btn btn-primary ml-2">Найти</button>
+            </form>
+        </div>
+    </div>
     <#include "parts/gameRoomAdd.ftlh">
     <div class="card-columns mt-3">
+
         <#list gamesroom>
             <#items as room>
                 <div class="card mx-auto">
@@ -32,6 +41,12 @@
                             <a class="btn btn-primary"
                                href="gamerooms/${room.idGameRoom}/edit">
                                 Редактировать </a>
+                        </#if>
+
+                        <#if !isAdmin>
+                            <a class="btn btn-primary"
+                               href="">
+                                Подписаться </a>
                         </#if>
 
                         <#if isAdmin>

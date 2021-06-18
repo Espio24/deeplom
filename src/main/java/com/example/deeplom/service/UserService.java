@@ -24,8 +24,8 @@ public class UserService implements UserDetailsService {
     @Autowired
     private UserRepo userRepo;
 
-   /* @Autowired
-    private MailSender mailSender;*/
+    @Autowired
+    private MailSender mailSender;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -58,18 +58,18 @@ public class UserService implements UserDetailsService {
 
             userRepo.save(user);
 
-        //sendMessage(user);
+        sendMessage(user);
 
 
         return true;
 
         }
 
-    /* private void sendMessage(User user) {
+     private void sendMessage(User user) {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to Create of dungeoun's . Please, visit next link: http://localhost:8080/activate/%s",
+                            "Добро пожаловать на сайт ВИгротеке . Для подтвержения аккаунта перейдите по следующей ссылке: http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );
@@ -89,7 +89,7 @@ public class UserService implements UserDetailsService {
         userRepo.save(user);
 
         return true;
-    }*/
+    }
 
     public List<User> findAll() {
         return userRepo.findAll();
@@ -168,8 +168,8 @@ public class UserService implements UserDetailsService {
 
         userRepo.save(user);
 
-        /*if (isEmailChanged) {
+        if (isEmailChanged) {
             sendMessage(user);
-        }*/
+        }
     }
 }

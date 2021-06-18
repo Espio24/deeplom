@@ -1,6 +1,7 @@
 package com.example.deeplom.domain;
 
 import javax.persistence.*;
+import java.util.*;
 
 @Entity
 public class GamesRoom {
@@ -19,6 +20,31 @@ public class GamesRoom {
     @JoinColumn(name = "user_id")
     private User user;
 
+    @ManyToMany(cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
+    @JoinTable(
+            name = "tablegames_to_gameroom",
+            joinColumns = {@JoinColumn(name = "gameroom_id")},
+            inverseJoinColumns = {@JoinColumn(name = "tablegame_id")}
+    )
+    private List<TableGames> tableGames = new ArrayList<>();
+
+
+    public List<TableGames> getTableGames() {
+        return tableGames;
+    }
+
+    public void setTableGames(List<TableGames> tableGames) {
+        this.tableGames = tableGames;
+    }
+
+    public void addTableGames(TableGames tableGame){
+        this.tableGames.add(tableGame);
+        tableGame.getGamesRooms().add(this);
+    }
+
     public GamesRoom() {
     }
 
@@ -30,6 +56,19 @@ public class GamesRoom {
         this.discriptionGameRoom = discriptionGameRoom;
         this.user = user;
         this.countPeople = countPeople;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GamesRoom gamesRoom = (GamesRoom) o;
+        return tableGames.equals(gamesRoom.tableGames);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tableGames);
     }
 
     public int getCountPeople() {

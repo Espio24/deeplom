@@ -1,27 +1,63 @@
 package com.example.deeplom.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-public class Order {
+public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String idOrder;
+    private Long idOrder;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User user;
+
     private String dateOrder;
     private String dateIssue;
     private String dateRefund;
+    @ManyToMany(cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
+    @JoinTable(
+            name = "tablegames_to_order",
+            joinColumns = {@JoinColumn(name = "order_id")},
+            inverseJoinColumns = {@JoinColumn(name = "tablegame_id")}
+    )
+    private List<TableGames> tableGames_or = new ArrayList<>();
 
-    public Order() {
+
+
+    public void addOrder(TableGames tableGame){
+        this.tableGames_or.add(tableGame);
+        tableGame.getOrders().add(this);
     }
 
-    public Order(User user, String dateOrder, String dateIssue, String dateRefund) {
+    public Orders() {
+    }
+
+    public Orders(User user, String dateOrder, String dateIssue, String dateRefund) {
         this.user = user;
         this.dateOrder = dateOrder;
         this.dateIssue = dateIssue;
         this.dateRefund = dateRefund;
+    }
+
+    public Long getIdOrder() {
+        return idOrder;
+    }
+
+    public void setIdOrder(Long idOrder) {
+        this.idOrder = idOrder;
+    }
+
+    public List<TableGames> getTableGames_or() {
+        return tableGames_or;
+    }
+
+    public void setTableGames_or(List<TableGames> tableGames_or) {
+        this.tableGames_or = tableGames_or;
     }
 
     public User getUser() {

@@ -2,160 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11b7abb6-6a54-45fc-8705-8cc9c1702b50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diagram.uml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/ComponentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/TagsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TagsForGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TypeComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TypeForGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/ComponentRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/OrderRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/TagsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/TypeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/TableGamesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/checkcomponent.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/orderAdmin.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/orderUser.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tagsEdit.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/152bd1e5-c4c0-436b-9fe1-33c54ef921db.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/3a604206-3747-4dbb-b062-96d913c2a633.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/5810734d-2ef0-4d59-8090-0c176d74d943.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/66403175-4dc3-44a7-8414-bd0a08d30312.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/6c7f0c3c-2d9f-449e-854c-6da5c70cd439.ec7574fd-f4a8-4de6-9e3c-b1dd3446107a.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/7577b378-ea35-4a75-96e8-7ed03eff9c0c.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/8ca85864-4c1f-4c33-8b72-3288cf63a94e.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/8f808d57-2b2a-4318-b21a-d1634ec36d52.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/8fe31d1d-2b28-487a-96e0-dcfd163694ef.f6161de1-b445-4937-8a9e-5abe365787fe.s1200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/a7048ef3-7fb4-426c-9016-978d25a622ae.s1200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/dd871cb2-c08e-41b0-8fe0-3009f867a5f1.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/f1dc8a13-c051-4240-b6ae-522ff9dda56b.4b298951-bfcf-434c-bc1b-8381b58d8f67.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/fa495277-9b9f-4636-9cce-b6bfd9677070.scale_1200.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/fd8e6b6b-2706-4ade-bf03-cb515c653bd3.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/gamesimg/ff7f0609-6ab5-44a9-bd9d-4bee5fe8b2ed.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/02c62db8-6a29-4349-bff4-372745c694f1.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/0332ae2c-ca66-4422-b38d-ce85143e0dc1.ea79b72d-b593-4208-b167-7fd310272637.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/0db36b9a-2bb0-4307-817d-c8454d933f02.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/0de2f3fb-e7a7-44f9-bb14-2450572e54ca.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/1542f3d5-0c9f-4e6b-aa87-d13a38a1dbf0.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/15a76505-7c8a-4d13-8149-a17a90519848.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/16bffa1f-c864-4a63-8f48-c23decac6368.f6161de1-b445-4937-8a9e-5abe365787fe.s1200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/18ddc040-4d4f-476b-9e5b-2ffc6c85cef8.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/2c1d7fd1-b9e3-46b0-aba6-51fc606c4662.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/2f01e4fc-d4a3-44b8-a0bd-bfced441aa96.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/30330bd4-d605-4f1d-aa37-73529c8e6e7a.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/315ada08-4550-4b6f-bf2e-ca1b62a1c79e.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/3750db6a-88b6-46d7-8de0-54077f3769fa.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/3aac8cbf-54ef-4159-8f2c-7b4d6312c4b3.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/3b297751-1797-4299-88e8-c89663d91a92.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/3cc2e550-0f3d-48fa-af43-f1ccedf85941.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/3fe2392f-28b8-417e-8df4-270c31a684ee.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/431ccb17-8f24-4c1d-b4f5-f284ac3d5081.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/4816797f-a46a-445b-a391-fb2e15fb3778.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/487367e2-4b2f-4e91-b7a8-7c49fbbb97a6.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/5d1f7e72-8a46-427f-8266-64666e00ee8c.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/6b94d20e-cf51-4fb3-af85-877f55e64770.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/6e324693-3edb-41e4-94d3-8ce9eb50d296.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/75676e37-2262-4ba7-9a1c-1cebafea033b.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/766936f7-c58b-4f86-be3d-f45ebdf74690.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/780cd523-10da-4792-adaf-3ac61c586598.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/78d2d209-a193-461a-b4a2-2340e4b1aaf7.e7233622-beca-4cf1-94e9-294edd36b891.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/7f2dc43a-05ae-45ef-9feb-b77bfcb353a9.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/7f6166b7-797d-4621-b8c8-b579560e97ee.4f313603-f9d3-42ae-b978-bcaa725c0c47.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/81400ea3-a17b-4aaf-ab35-4e9e7ab49fbd.e7233622-beca-4cf1-94e9-294edd36b891.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8140aeb5-347e-4d9d-99fb-a1e790f06ecf.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/85088386-d7f7-4cb0-a819-06ad35de2866.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8b6e4dae-2b99-497e-85dc-9ef46fbd0bbc.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8d69eecb-a4e5-45d7-b50d-a6142d3c52c7.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/8f3f61ea-c7a0-4de0-9909-73fe6cd596f7.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/94eb6e44-6665-4bba-9803-b98432e11c18.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/97e4195b-47c2-4c6a-b8d7-020315b37dd6.e7233622-beca-4cf1-94e9-294edd36b891.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/9b57d6c6-17a8-44f5-8094-08fa04c6153d.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/9c19824e-3a16-40c4-b7f3-89d443cae166.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/9e3dba64-07ea-4b08-8e75-5e1178996784.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/a36b0975-6e93-4433-b15d-7de435823993.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/aa0e209c-af05-4560-bd07-372d84dbb566.f6161de1-b445-4937-8a9e-5abe365787fe.s1200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/aa96745a-552a-4439-8820-57008282f65a.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/add28590-5e43-43f3-86dd-454863c4c06a.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/b0a27bd9-d188-4ed8-96f3-32442bdfcbcd.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/b3835304-101d-4a3b-9d19-3cd7de4c49c4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/b7168858-e2f5-48e0-98f4-d60ac4262db3.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/b9ee22d4-d265-4166-8073-e3a2d2dd2a7c.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c0dd4e7d-eca1-49c2-97ba-a115f02e38f0.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c124f7f0-f6c4-4567-855b-43e876c3cf96.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c1480b58-52ae-427c-a25a-3b7c62784db6.shutterstock_90312397-1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c3970727-9fce-4e84-94d5-1ada0754820b.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c4105903-eed3-4853-817b-b37df556bbb1.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/c7e831f2-5202-4c5c-8d1a-de7702cd727f.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/cc0af313-76b3-4916-97cf-62a7dc2e1ee9.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/cc374770-efd3-4d56-9e13-28f4f41eadf4.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/cf037b66-8ae0-4962-9f2f-6dfcef27c028.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/d841339d-0378-4ce8-913e-2fae8b7090ff.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/d86b567a-223e-41e8-b208-ad54650b5f93.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/de49eee4-aa73-465d-9590-566c3af5de4e.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/df6ffeec-d810-4c40-b39b-946f95fa8e75.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/e05d26be-efef-424c-889c-c677e2f88dff.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/e367da02-1ee8-47f1-a1e3-d75a04e68279.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/ec006206-eb17-4333-8ab4-efadf021c698.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/f44500b5-4606-4ae9-884d-16ca5c773f46.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/f4c213c0-6ad6-409b-944c-2ab35226ea24.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/f6d8aeb6-ef04-4ed8-9ac8-5d4eb2e0593e.84619a49-eecb-4814-b9fc-6d1c4a9f5fa4.ad43867cf93a3ab97e74678322d6a57a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/f80bc5dd-d1bf-4d2b-980a-6be371b33e61.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/fba62d49-253f-4a2a-8b79-ed96def8864b.ae9e2bb5-dc0f-4c5d-9923-d54a92e1f0ec.optimize.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/roomimg/fd6be3a0-1082-4ebd-91d5-99c40465844e.ec7574fd-f4a8-4de6-9e3c-b1dd3446107a.monopoly-russia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/Gloomhaven.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/achivments.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/korzina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/mansions.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/nemesis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/user.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/staticimg/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/Korzina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/KorzinaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/emptycart.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/profileimg/2d606a9a-1acc-496b-b173-cdb6a30da4d0.XyopyNvACr4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/6db75d24-c1ae-49c7-bcce-827ac9c4267a.optimize.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/roomimg/91096c6a-f83e-4b4a-ae0b-b8f5eddfc83b.optimize.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GameRoomContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GameRoomContoller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GamesContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/GamesContoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/GamesRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/GamesRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/Order.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TableGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/TableGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/GameRoomRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/GameRoomRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/TableGamesRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/TableGamesRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/GameRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/GameRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/MailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/MailSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gameRoomPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gameRoomPage.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gameroomsList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gameroomsList.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/repos/OrderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deeplom/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gamesList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gamesList.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gamesPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gamesPage.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/gameEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/gameEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/gameRoomAdd.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/gameRoomAdd.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orderAdmin.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orderAdmin.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/userEdit.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/gamesList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/gamesList.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/login.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,8 +68,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -327,7 +197,10 @@
       <workItem from="1623959033581" duration="1819000" />
       <workItem from="1623960888059" duration="136000" />
       <workItem from="1623961281396" duration="7750000" />
-      <workItem from="1624001318276" duration="7018000" />
+      <workItem from="1624001318276" duration="7286000" />
+      <workItem from="1624202627168" duration="7026000" />
+      <workItem from="1624217744154" duration="10076000" />
+      <workItem from="1624266545135" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил игротеку">
       <created>1620311719808</created>
@@ -343,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620669102565</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Осталось сделать аренду">
+      <created>1624008924307</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624008924307</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +233,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Добавил игротеку" />
     <MESSAGE value="Добавил редактирование игротек и профиля, профиль" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил редактирование игротек и профиля, профиль" />
+    <MESSAGE value="Осталось сделать аренду" />
+    <option name="LAST_COMMIT_MESSAGE" value="Осталось сделать аренду" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1621460475158">
@@ -372,10 +253,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="717" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620654835174" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1624007622701">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1624222712400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007622701" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624222712400" />
     <state x="414" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1620654356993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -388,82 +269,86 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="367" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620589905869" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1620669099248">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1624008922015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1620669099248" />
-    <state width="462" height="466" key="DebuggerActiveHint" timestamp="1623962419831">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624008922015" />
+    <state width="462" height="466" key="DebuggerActiveHint" timestamp="1624219731762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="462" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1623962419831" />
+    <state width="462" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624219731762" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1624001608314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624001608314" />
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1624007915738">
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087110" />
-    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.0.center/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087109" />
-    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1624266689547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689547" />
     <state width="1397" height="184" key="GridCell.Tab.0.left/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087109" />
-    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.0.right/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087110" />
-    <state width="1877" height="234" key="GridCell.Tab.1.bottom" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.1.bottom" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087110" />
-    <state width="1877" height="234" key="GridCell.Tab.1.center" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.1.center" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.1.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.1.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.1.center/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087110" />
-    <state width="1877" height="234" key="GridCell.Tab.1.left" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.1.left" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.1.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.1.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.1.left/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087110" />
-    <state width="1877" height="234" key="GridCell.Tab.1.right" timestamp="1624007915738">
+    <state width="1877" height="305" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="234" key="GridCell.Tab.1.right" timestamp="1624266689548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.1.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007915738" />
+    <state width="1877" height="234" key="GridCell.Tab.1.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624266689548" />
     <state width="1397" height="184" key="GridCell.Tab.1.right/0.0.1920.1040/1920.86.1440.860@1920.86.1440.860" timestamp="1623619039733" />
-    <state width="1877" height="220" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622457087110" />
-    <state width="1877" height="305" key="GridCell.Tab.2.bottom" timestamp="1624007903082">
+    <state width="1877" height="305" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="305" key="GridCell.Tab.2.bottom" timestamp="1624227915781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007903082" />
-    <state width="1877" height="305" key="GridCell.Tab.2.center" timestamp="1624007903082">
+    <state width="1877" height="305" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624227915781" />
+    <state width="1877" height="305" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713966" />
+    <state width="1877" height="305" key="GridCell.Tab.2.center" timestamp="1624227915781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.2.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007903082" />
-    <state width="1877" height="305" key="GridCell.Tab.2.left" timestamp="1624007903082">
+    <state width="1877" height="305" key="GridCell.Tab.2.center/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624227915781" />
+    <state width="1877" height="305" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713966" />
+    <state width="1877" height="305" key="GridCell.Tab.2.left" timestamp="1624227915781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.2.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007903082" />
-    <state width="1877" height="305" key="GridCell.Tab.2.right" timestamp="1624007903082">
+    <state width="1877" height="305" key="GridCell.Tab.2.left/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624227915781" />
+    <state width="1877" height="305" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713965" />
+    <state width="1877" height="305" key="GridCell.Tab.2.right" timestamp="1624227915781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.2.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624007903082" />
+    <state width="1877" height="305" key="GridCell.Tab.2.right/0.0.1920.1040/1920.86.1440.860@0.0.1920.1040" timestamp="1624227915781" />
+    <state width="1877" height="305" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624209713966" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1616508750075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

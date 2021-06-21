@@ -47,6 +47,7 @@ public class User implements UserDetails {
         return Objects.hash(id);
     }
 
+
     public String getFilenameUser() {
         return filenameUser;
     }
@@ -165,6 +166,7 @@ public class User implements UserDetails {
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
     }
+
 
    /* public List<ToyLibrary> getToyLibraries() {
         return toyLibraries;

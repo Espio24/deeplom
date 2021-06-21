@@ -88,26 +88,15 @@
                         <table>
                             <tbody>
                             <div>
+                                <#list gamesrooms>
+                                    <#items as gameroom>
                                 <tr>
-                                    <th width=30px scope="row">1</th>
-                                    <td>Моя игротека</td>
-                                    <th>5/7</th>
+                                    <th width=30px scope="row">${gameroom?counter}</th>
+                                    <td><a href="/gamerooms/${gameroom.idGameRoom}">${gameroom.nameGameRoom}</a></td>
+                                    <th>${gameroom.countPeople}</th>
                                 </tr>
-                                <tr>
-                                    <th width=30px scope="row">2</th>
-                                    <td>Крутая игротека</td>
-                                    <th>15/20</th>
-                                </tr>
-                                <tr>
-                                    <th width=30px scope="row">3</th>
-                                    <td>Приходите все</td>
-                                    <th>10/50</th>
-                                </tr>
-                                <tr>
-                                    <th width=30px scope="row">4</th>
-                                    <td>Поиграем?</td>
-                                    <th>7/7</th>
-                                </tr>
+                                    </#items>
+                                </#list>
                             </div>
                             </tbody>
                         </table>

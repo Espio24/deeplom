@@ -1,9 +1,11 @@
 package com.example.deeplom.controllers;
 
 
+import com.example.deeplom.domain.GamesRoom;
 import com.example.deeplom.domain.Role;
 import com.example.deeplom.domain.TableGames;
 import com.example.deeplom.domain.User;
+import com.example.deeplom.repos.GameRoomRepo;
 import com.example.deeplom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -23,6 +26,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private GameRoomRepo gameRoomRepo;
 
    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping
@@ -58,6 +63,9 @@ public class UserController {
             @PathVariable User user,
             Model model
     ){
+       Iterable<GamesRoom> gamesRooms = gameRoomRepo.findByUser(user);
+
+       model.addAttribute("gamesrooms", gamesRooms);
         model.addAttribute("users", user);
         return "profile";
     }

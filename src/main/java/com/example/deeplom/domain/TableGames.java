@@ -31,6 +31,12 @@ public class TableGames {
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "tableGames")
     private List<GamesRoom> gamesRooms = new ArrayList<>();
 
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "tableGames_or")
+    private List<Orders> order = new ArrayList<>();
+
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "tableGames_kor")
+    private List<Korzina> korzinas = new ArrayList<>();
+
     public List<GamesRoom> getGamesRooms() {
         return gamesRooms;
     }
@@ -66,6 +72,22 @@ public class TableGames {
         this.analysis = analysis;
         this.discriptionTableGames = discriptionTableGames;
         this.nameTableGames = nameTableGames;
+    }
+
+   public List<Orders> getOrders() {
+        return order;
+    }
+
+    public void setOrders(List<Orders> order) {
+        this.order = order;
+    }
+
+    public List<Korzina> getKorzinas() {
+        return korzinas;
+    }
+
+    public void setKorzinas(List<Korzina> korzinas) {
+        this.korzinas = korzinas;
     }
 
     public int getBasecost() {

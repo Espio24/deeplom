@@ -3,7 +3,9 @@
 
 
 <@c.page>
+    <#if isAdmin>
     <#include "parts/gameEdit.ftlh">
+    </#if>
     <h1>Список игр</h1>
     <div class="card-columns mt-3">
         <#list tablegames>
@@ -24,7 +26,7 @@
                                href="">
                                 Подписаться </a>
                             <a class="btn btn-primary"
-                               href="">
+                               href="/tablegames/addkorzina/${games.idTableGames}">
                                 Добавить в аренду </a>
                         </#if>
 
@@ -35,8 +37,8 @@
                                    Действия
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item"  href="tablegames/${games.idTableGames}/edit">Редактировать</a>
-                                    <a class="dropdown-item"  href="/tablegames/delete/${games.idTableGames}">Удалить</a>
+                                    <a class="dropdown-item" href="tablegames/${games.idTableGames}/edit">Редактировать</a>
+                                    <a class="dropdown-item" href="/tablegames/delete/${games.idTableGames}">Удалить</a>
                                     <a class="dropdown-item" href="#">Копии</a>
                                     <a class="dropdown-item" href="#">Добавить копию</a>
                                 </div>

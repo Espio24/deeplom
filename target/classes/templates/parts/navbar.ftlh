@@ -42,7 +42,9 @@
             </#if>
 
         </ul>
-        <div ><a class="text-white mr-3" href="/order/cart">Корзина</a></div>
+        <#if !isAdmin>
+        <div ><a class="text-white mr-3" href="/order/${id}">Корзина</a></div>
+        </#if>
         <div ><a class="text-white mr-3" href="user/profile/${id}">${name}</a></div>
         <@l.logout />
     </div>

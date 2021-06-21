@@ -1,16 +1,15 @@
 package com.example.deeplom.controllers;
 
-import com.example.deeplom.domain.GamesRoom;
-import com.example.deeplom.domain.TableGames;
-import com.example.deeplom.domain.TagsForGame;
-import com.example.deeplom.domain.TypeForGame;
+import com.example.deeplom.domain.*;
 import com.example.deeplom.repos.TableGamesRepo;
 import com.example.deeplom.repos.TagsRepo;
 import com.example.deeplom.repos.TypeRepo;
+import com.example.deeplom.service.OrderService;
 import com.example.deeplom.service.TableGamesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +27,9 @@ import java.util.UUID;
 public class GamesContoller {
     @Autowired
     TableGamesService tableGamesService;
+
+    @Autowired
+    OrderService orderService;
 
     @Autowired
     private TagsRepo tagsRepo;
@@ -50,6 +52,29 @@ public class GamesContoller {
         return "gamesList";
     }
 
+
+    @GetMapping("/tablegames/addkorzina/{tableGames}")
+    public String addGKorzina(
+            @AuthenticationPrincipal User user,
+            @PathVariable TableGames tableGames
+    ){
+        orderService.AddtoKorzina(user, tableGames);
+        return "redirect:/tablegames";
+    }
+
+
+   /* @PostMapping("/tablegames/addkorzina/{tableGames}")
+    public String addKorzina(
+            @AuthenticationPrincipal User user,
+            @PathVariable TableGames tableGames,
+            Model model
+    ){
+
+        return "redirect:/tablegames";
+    }*/
+
+
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/tablegames")
     public String addGame(
             @RequestParam String nameTableGames,

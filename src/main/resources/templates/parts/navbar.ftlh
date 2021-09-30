@@ -18,7 +18,7 @@
             </li>
             <#if !isAdmin>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/order">Мои заказы</a>
+                    <a class="nav-link text-white" href="/myorder/${id}">Мои заказы</a>
                 </li>
             </#if>
 

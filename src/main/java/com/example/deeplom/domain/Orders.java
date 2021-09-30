@@ -3,6 +3,7 @@ package com.example.deeplom.domain;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Orders {
@@ -27,7 +28,17 @@ public class Orders {
     )
     private List<TableGames> tableGames_or = new ArrayList<>();
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "status_id")
+    private OrderStatus orderStatuses;
 
+    public OrderStatus getOrderStatuses() {
+        return orderStatuses;
+    }
+
+    public void setOrderStatuses(OrderStatus orderStatuses) {
+        this.orderStatuses = orderStatuses;
+    }
 
     public void addOrder(TableGames tableGame){
         this.tableGames_or.add(tableGame);
@@ -37,11 +48,12 @@ public class Orders {
     public Orders() {
     }
 
-    public Orders(User user, String dateOrder, String dateIssue, String dateRefund) {
+    public Orders(User user, String dateOrder, String dateIssue, String dateRefund, OrderStatus orderStatuses) {
         this.user = user;
         this.dateOrder = dateOrder;
         this.dateIssue = dateIssue;
         this.dateRefund = dateRefund;
+        this.orderStatuses = orderStatuses;
     }
 
     public Long getIdOrder() {

@@ -23,33 +23,40 @@
                                         Действия
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Подтвердить</a>
-                                        <a class="dropdown-item" href="#">Выдать</a>
-                                        <a class="dropdown-item" href="#">Принять</a>
+                                        <a class="dropdown-item" href="/admorder/confirm/${order.idOrder}">Подтвердить</a>
+                                        <a class="dropdown-item" href="/admorder/issue/${order.idOrder}">Выдать</a>
+                                        <a class="dropdown-item" href="/admorder/accept/${order.idOrder}">Принять</a>
                                         <a class="dropdown-item" href="#">Проблема</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <ul class="list-unstyled">
-                        <#list order.tableGames_or>
-                            <#items as game>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample${order?counter}" role="button" aria-expanded="false"
+                       aria-controls="collapseExample">
+                        Список игр
+                    </a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample${order?counter}">
+                        <ul class="list-unstyled">
+                            <#list order.tableGames_or>
+                                <#items as game>
 
-                                <li class="media mt-3">
-                                    <a class="mr-3" href="#">
-                                        <img src="/gamesimg/${game.filenameTableGames}" height=64px width=64px class="mr-3" alt="...">
-                                    </a>
-                                    <div class="media-body">
-                                        <h5 class="mt-0">${game.nameTableGames}</h5>
-                                        Серийный номер 89456319756319
-                                    </div>
-                                </li>
-                            </#items>
-                        </#list>
+                                    <li class="media mt-3">
+                                        <a class="mr-3" href="#">
+                                            <img src="/gamesimg/${game.filenameTableGames}" height=64px width=64px class="mr-3" alt="...">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">${game.nameTableGames}</h5>
+                                            Серийный номер 89456319756319
+                                        </div>
+                                    </li>
+                                </#items>
+                            </#list>
 
-                    </ul>
-                    <small><b>Статус</b> ожидает подтверждения <b>Сумма заказа</b> 1000</small>
+                        </ul>
+                    </div>
+                    <br><b>Статус</b>  <div class="text-info"> ${order.orderStatuses.getName()}</div>
+                    <b>Сумма заказа</b> 1000
                 </div>
             </li>
         </#items>

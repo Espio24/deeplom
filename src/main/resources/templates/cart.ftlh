@@ -36,8 +36,10 @@
                     <form method="post">
                         <p>
                         <div class="form-group">
+                            <h6>Дата выдачи</h6>
                             <input type="datetime-local" class="form-control" name="dataIssue"
                                    placeholder="Дата выдачи">
+                            <h6>Дата возврата</h6>
                             <input type="datetime-local" class="form-control" name="dataRefund"
                                    placeholder="Дата возврата">
                             <input type="hidden" class="form-control" name="_csrf" value="${_csrf.token}"/>
